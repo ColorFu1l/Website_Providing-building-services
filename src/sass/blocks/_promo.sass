@@ -1,0 +1,87 @@
+.main 
+    padding-top: 32px
+    overflow: hidden 
+.promo
+    position: relative
+    padding-bottom: 136px
+    &__inner
+        display: flex
+    &__column-left
+        max-width: 531px
+        margin-top: 72px
+        margin-right: 32px
+    &__title
+        color: $secondary-color
+        font-weight: 700
+        font-size: 60px
+        line-height: 70px
+        margin-bottom: 73px
+    &__subtitle
+        color: $secondary-color
+        font-weight: 400
+        font-size: 22px
+        line-height: 27px
+        margin-bottom: 85px
+    &__column-right
+    &__rectangle
+        width: 681px
+        height: 520px
+        top:0
+        right: -132px
+        border: 10px solid $primary-color
+        position: absolute
+        z-index: -1
+    &__carrousel
+        margin-top: 40px
+        max-width: 640px
+        max-height: 440px
+        position: relative
+        .slick-prev
+            border: none
+            background-color: transparent
+            position: absolute
+            z-index: 10
+            top: 50%
+            transform: translateY(-50%)
+            left: 13px
+            cursor: pointer
+            img
+                width: 30
+                height: 60
+        .slick-next
+            border: none
+            background-color: transparent
+            position: absolute
+            z-index: 10
+            top: 50%
+            transform: translateY(-50%)
+            right: 13px
+            cursor: pointer
+            img
+                width: 30
+                height: 60
+        .slick-dots
+            display: flex
+            position: absolute
+            bottom: 13px
+            left: 50%
+            transform: translate(-50%, -50%)
+            list-style: none
+            li + li
+                margin-left: 15px
+            button
+                font-size: 0
+                padding: 0
+                border: none
+                background-color: $secondary-color
+                width: 13px
+                height: 13px
+                border-radius: 50%
+                cursor: pointer
+                transition: all 0.3s
+            button:hover
+                background-color: $primary-color
+        .slick-active
+            button
+                background-color: $primary-color
+                    

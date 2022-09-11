@@ -1,0 +1,43 @@
+.header 
+    padding-top: 27px
+    display: flex
+    justify-content: space-between
+    // &__img
+.menu
+    margin-top: 33px
+    &__list
+        display: flex
+        list-style: none
+    &__item + &__item
+        margin-left: 69px
+    &__link
+        font-weight: 500
+        font-size: 16px
+        line-height: 20px
+        letter-spacing: 0.05em
+        color: $secondary-color
+        transition: 0.3s all
+        &:hover
+            border-bottom: 3px solid $primary-color
+.contacts
+    margin-top: 27px
+    display: flex
+    flex-direction: column
+    &__phone
+        text-align: right
+        font-weight: 500
+        font-size: 16px
+        line-height: 20px
+        letter-spacing: 0.05em
+        color: $secondary-color
+        margin-bottom: 6px
+    &__btn
+        font-weight: 500
+        font-size: 16px
+        line-height: 20px
+        letter-spacing: 0.05em
+        color: $primary-color
+        background: none
+        border: none
+        border-bottom: 1px solid $primary-color
+    
